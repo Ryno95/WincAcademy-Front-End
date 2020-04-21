@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2::before {
+    /* Important!!! Add content element */
+    content: 'hello'; 
+    background: red;
+    width: 25px;
+    height: 25px;
+}
+h2::after {
+    /* Important!!! Add content element */
+    content: 'goodbye'; 
+    background: red;
+    width: 25px;
+    height: 25px;
+}

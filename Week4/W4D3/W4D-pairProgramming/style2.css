@@ -1,0 +1,38 @@
+body {
+	background-color: #c3cfe2;
+}
+.container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-gap: 1em;
+	padding: 30px;
+}
+.button {
+	background-color: slategray;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+}
+
+.container div {
+	display: grid;
+	content: url(bigBird.jpg);
+	background-color: slategray;
+	max-width: 100%;
+}
+
+.container div:hover {
+	content: none;
+}
+
+@media only screen and (min-width: 640px) {
+	.container {
+		grid-template-columns: auto auto;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.container {
+		grid-template-columns: auto auto auto;
+	}
+}
