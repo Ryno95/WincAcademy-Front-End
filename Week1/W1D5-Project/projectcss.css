@@ -1,0 +1,93 @@
+#Hbutton {
+    background-color: #f1f1f1;
+}
+
+#Tbutton {
+    background-color: turquoise;
+}
+
+#Vbutton {
+    background-color: violet
+}
+
+#Obutton {
+    background-color: orange;
+}
+
+#Gbutton {
+    background-color: green;
+}
+
+#Rbutton {
+    background-color: red;
+}
+
+.home-background {
+    background-color: #f1f1f1;
+}
+
+.blue-background {
+    background-color: turquoise;
+}
+
+.purple-background {
+    background-color: violet;
+}
+
+.orange-background {
+    background-color: orange;
+}
+
+.green-background {
+    background-color: green;
+}
+
+.red-background {
+    background-color: red;
+}
+
+.dropdownbtn {
+    width: 80px;
+    height: 60px;
+    background-color: white;
+    background-image: url("menu.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+}
+
+.nav-sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: calc(100vh - 60px);
+    width: 200px;
+}
+
+.nav-sidebar ul {
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: visible;
+}
+
+.nav-sidebar ul li {
+    line-height: 60px;
+    list-style: none;
+}
+
+.nav-sidebar ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-align: center;
+    font-family: arial;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.nav-sidebar ul li a :hover {
+    background-color: black;
+}

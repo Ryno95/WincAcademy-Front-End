@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="W1-D1-1">
+    <title>Practice Event Handlers</title>
+    <style>
+        .blue-background {
+            background-color: blue;
+        }
+        
+        .purple-background {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body id='body' class="blue-background">
+
+    <button id="mybutton" type="button" class="btn-alert">Alert Me!</button>
+    <button id="changeBRC" type="button" class="btn-change">Change Background Color</button>
+
+    <script>
+        const changeClassBlueB = function() {
+            const bodyElement = document.body;
+            bodyElement.classList.toggle("purple-background");
+        };
+
+        const changeBackroundColorButton = function() {
+            const changeBackGroundC = document.getElementById('changeBRC');
+            changeBackGroundC.addEventListener('click', function(e) {
+                changeClassBlueB();
+                console.log('This Color Change Button has been clicked'); //te teseten of de button het doet
+            });
+        };
+
+
+        const alertButton = function() {
+            const button = document.getElementById('mybutton');
+            button.addEventListener('click', function(e) {
+                alert('This Button has been clicked');
+                console.log(e.target);
+                console.log(e);
+            });
+        };
+        document.addEventListener('DOMContentLoaded', event => {
+            alertButton();
+            changeBackroundColorButton();
+        });
+    </script>
+</body>
+
+</html>

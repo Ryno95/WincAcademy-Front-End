@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="W1-D5">
+    <title>Project Event Handlers</title>
+    <link href="projectcss.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="body">
+
+    <aside class="nav-sidebar">
+        <button class="dropdownbtn" onclick="toggleNav()"></button>
+        <ul class="dropdownlist">
+            <li><a href="#" id="Hbutton">Home</a></li>
+            <li><a href="#" id="Tbutton">Turquoise</a></li>
+            <li><a href="#" id="Vbutton">Violet</a></li>
+            <li><a href="#" id="Obutton">Orange</a></li>
+            <li><a href="#" id="Gbutton">Green</a></li>
+            <li><a href="#" id="Rbutton">Red</a></li>
+        </ul>
+    </aside>
+    <script>
+        let toggleNav = function() {
+            let getSidebar = document.querySelector(".nav-sidebar");
+            let getSidebarUL = document.querySelector(".nav-sidebar ul");
+            let getSidebarLinks = document.querySelectorAll(".nav-sidebar a");
+        }
+        const changeClassBT = function() {
+            const bodyElement = document.body;
+            bodyElement.classList.toggle("blue-background");
+        };
+
+        const changeBackGroundColorButtonT = function() {
+            const changeBackGroundC = document.getElementById('TButton');
+            changeBackGroundC.addEventListener('click', function() {
+                changeClassBT();
+                alert('This Color Change Button has been clicked'); //te teseten of de button het doet
+            });
+        };
+
+        document.addEventListener('DOMContentLoaded', event => {
+            changeBackGroundColorButtonT();
+        });
+    </script>
+
+
+</body>
+
+</html>
